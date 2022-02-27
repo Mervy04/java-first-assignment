@@ -1,0 +1,108 @@
+package com.company;
+
+// import statements to allow use of Java Libraries & Classes
+import java.util.Scanner;
+
+//import java.util.*;  import java utility scanner class
+public class Main {
+
+    // String garbage which stores data we wont use
+
+
+
+    // Constant declarations for Main class only
+
+    private final static int INVALID = -1;
+    private final static String seperator = "\n===========================================================================\n";
+
+
+    public static void main(String[] args) {
+
+
+
+        // String garbage which stores data we wont use
+        String garbage;
+
+        // Data Variables
+
+        String myName;
+        int myInt;
+        double myDouble;
+        Boolean myBoolean;
+
+        // Intro Print Statement
+
+        System.out.println("\n\tICS4U First Java Assignment: Main & Utility Classes\n");
+
+
+
+
+        //allows the scanner to read for inputs
+        Scanner scan = new Scanner(System.in);
+
+        // user input with scanner for my name, int and double.
+
+        System.out.println(seperator);
+
+        System.out.println("Please enter your full name:");
+        myName = scan.next();
+
+        // do while loops
+
+        while (myBoolean = false);
+        do {
+            System.out.println("Please enter an integer number:");
+            if (scan.hasNextInt()) {
+                myInt = scan.nextInt();
+                myBoolean = true;
+
+            } else {
+                System.out.println("Invalid integer number, please input a valid integer number next time.\t\n");
+                garbage = scan.next();
+                myInt = scan.nextInt();
+
+            }
+        } // while loop
+        while (myBoolean = false);
+
+        do {
+            System.out.println("Please enter a double number:");
+            if (scan.hasNextDouble()) {
+                myDouble = scan.nextDouble();
+                myBoolean = false;
+
+            } else {
+                System.out.println("Invalid double number, please input a valid double number next time.\t\n");
+                garbage = scan.next();
+                myDouble = scan.nextDouble();
+
+            }
+
+        } while (myBoolean);
+        myBoolean = true;
+
+        System.out.println("My name is: " + myName + " My integer is: " + myInt + " My double is: "+ myDouble);
+
+        // Reset the variables
+        myBoolean = null;
+        myDouble = INVALID;
+        myInt = INVALID;
+        myName = null;
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
